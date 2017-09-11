@@ -24,5 +24,22 @@ namespace CatResponder
         {
             InitializeComponent();
         }
+
+        private void buttonCat_Click(object sender, RoutedEventArgs e)
+        {
+            if (MediaButton.Content == FindResource("ON"))
+            {
+                MediaButton.Content = FindResource("OFF");
+            }
+            else
+            {
+                MediaButton.Content = FindResource("ON");
+            }
+        }
+
+        private void buttonCat_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }
