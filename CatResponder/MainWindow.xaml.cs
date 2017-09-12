@@ -27,13 +27,13 @@ namespace CatResponder
 
         private void buttonCat_Click(object sender, RoutedEventArgs e)
         {
-            if (MediaButton.Content == FindResource("ON"))
+            if (buttonCat.Content == FindResource("ON"))
             {
-                MediaButton.Content = FindResource("OFF");
+                buttonCat.Content = FindResource("OFF");
             }
             else
             {
-                MediaButton.Content = FindResource("ON");
+                buttonCat.Content = FindResource("ON");
             }
         }
 

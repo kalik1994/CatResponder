@@ -7,12 +7,12 @@
         mc:Ignorable="d"
         Height="300" Width="300" HorizontalAlignment="Left" VerticalAlignment="Top">
     <Window.Resources>
-        <Image x:Key="ON" Source="..\Images\ONswitch.png" Height="50" Width="50" />
-        <Image x:Key="OFF" Source="..\Images\OFFswitch.png" Height="50" Width="50" />
-        <Image x:Key="CAT" Source="..\Images\catSkype.png" Height="50" Width="50" />
+        <Image x:Key="ON" Source="/Images/ONswitch.png" Height="50" Width="50" />
+        <Image x:Key="OFF" Source="/Images/OFFswitch.png" Height="50" Width="50" />
+        <Image x:Key="CAT" Source="/Images/catSkype.gif" Height="50" Width="50" />
     </Window.Resources>
     <Grid>
-        <Button x:Name="buttonCat" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="buttonCat_Click" MouseEnter="buttonCat_MouseEnter"/>
+        <Button x:Name="buttonCat" Content="{DynamicResource OFF}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="buttonCat_Click" MouseEnter="buttonCat_MouseEnter"/>
 
     </Grid>
 </Window>
